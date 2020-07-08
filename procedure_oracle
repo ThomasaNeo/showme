@@ -1,0 +1,10 @@
+## 创建存储过程，目的为了自动审核项目上的设备
+CREATE OR REPLACE PROCEDURE procedure_test 
+  UPDATE tb_sbqy SET shzt = 1 WHERE shzt = 0 AND taskbsm = 9;
+## 查看当前用户模式下的所有对象
+SELECT * FROM user_objects; 
+## 查看当前用户模式下的所有程序源代码
+SELECT * FROM user_source;
+## 删除存储过程和存储函数
+DROP PRODUCE proc_name;
+DROP FUNCTION func_name;
